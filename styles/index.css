@@ -1,0 +1,228 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 40px;
+
+    background-color: #333;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    color: orange;
+}
+.logo-img{
+    width: 30px;
+    border-radius: 5px;
+}
+
+*//////////////*
+
+* -------------------- */
+
+
+
+/* -------------------- */
+/* Body */
+/* -------------------- */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+}
+
+/* -------------------- */
+/* Header */
+/* -------------------- */
+
+.page-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.page-header h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.page-header p {
+    color: #666;
+}
+
+/* -------------------- */
+/* Pricing Container */
+/* -------------------- */
+
+.pricing-container {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+/* -------------------- */
+/* Pricing Card */
+/* -------------------- */
+
+.pricing-card {
+    background: white;
+    border-radius: 15px;
+    padding: 35px 25px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+    position: relative;
+
+    transition: 0.3s;
+}
+
+/* Hover Effect */
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+}
+
+/* -------------------- */
+/* Featured Card */
+/* -------------------- */
+
+.featured {
+    background: #2563eb;
+    color: white;
+
+    transform: scale(1.05);
+}
+
+/* Badge */
+
+.badge {
+    position: absolute;
+
+    top: -15px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    background: orange;
+    color: white;
+
+    padding: 8px 18px;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* -------------------- */
+/* Price */
+/* -------------------- */
+
+.price {
+    font-size: 40px;
+    font-weight: bold;
+
+    margin: 25px 0;
+}
+
+.price span {
+    font-size: 16px;
+}
+
+/* -------------------- */
+/* Features */
+/* -------------------- */
+
+.features {
+    list-style: none;
+
+    margin: 30px 0;
+}
+
+.features li {
+    padding: 12px 0;
+
+    border-bottom: 1px solid #ddd;
+}
+
+/* Featured card border color */
+
+.featured .features li {
+    border-color: rgba(255,255,255,.3);
+}
+
+/* -------------------- */
+/* Button */
+/* -------------------- */
+
+button {
+    width: 100%;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #faba30;
+}
+
+/* Featured Button */
+
+.featured button {
+    background: white;
+    color: #2563eb;
+}
+
+.featured button:hover {
+    background: #ebfffb;
+}
