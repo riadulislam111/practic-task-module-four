@@ -47,15 +47,11 @@
     border-radius: 5px;
 }
 
-*//////////////*
 
 * -------------------- */
 
 
-
-/* -------------------- */
-/* Body */
-/* -------------------- */
+/* Body  */
 
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -63,9 +59,8 @@ body {
     padding: 50px 20px;
 }
 
-/* -------------------- */
-/* Header */
-/* -------------------- */
+
+/* Header  */
 
 .page-header {
     text-align: center;
@@ -81,9 +76,8 @@ body {
     color: #666;
 }
 
-/* -------------------- */
-/* Pricing Container */
-/* -------------------- */
+
+/* Pricing Contgainer      */
 
 .pricing-container {
     max-width: 1100px;
@@ -95,9 +89,7 @@ body {
     gap: 30px;
 }
 
-/* -------------------- */
-/* Pricing Card */
-/* -------------------- */
+/* Pricing Card  */
 
 .pricing-card {
     background: white;
@@ -119,9 +111,8 @@ body {
     transform: translateY(-10px);
 }
 
-/* -------------------- */
-/* Featured Card */
-/* -------------------- */
+
+/* Featured Card  */
 
 .featured {
     background: #2563eb;
@@ -133,7 +124,7 @@ body {
 /* Badge */
 
 .badge {
-    position: absolute;
+    position: relative;
 
     top: -15px;
     left: 50%;
@@ -151,9 +142,8 @@ body {
     font-weight: bold;
 }
 
-/* -------------------- */
-/* Price */
-/* -------------------- */
+
+/* Price  */
 
 .price {
     font-size: 40px;
@@ -166,9 +156,8 @@ body {
     font-size: 16px;
 }
 
-/* -------------------- */
-/* Features */
-/* -------------------- */
+
+/* Features  */
 
 .features {
     list-style: none;
@@ -188,10 +177,8 @@ body {
     border-color: rgba(255,255,255,.3);
 }
 
-/* -------------------- */
-/* Button */
-/* -------------------- */
 
+/* Button  */
 button {
     width: 100%;
 
@@ -225,4 +212,50 @@ button:hover {
 
 .featured button:hover {
     background: #ebfffb;
+}
+
+/* comparison section */
+
+.comparison-section{
+max-width: 1100px;
+margin: 70px auto;
+
+}
+
+.comparison-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+/* tabel  */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+}
+
+th {
+    background-color: #2563eb;
+    color: white;
+}
+
+/* Zebra Striping */
+tbody tr:ntn-child(even) {
+    background-color: #f4f4f4;
+}
+/* Hover Effect */
+tbody tr:hover {
+    background-color: #e8f0ff;
+}
+/* First Column Bold  */
+td:first-child {
+    font-weight: bold;
+    text-align: left;
 }

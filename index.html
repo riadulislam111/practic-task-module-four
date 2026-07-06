@@ -1,84 +1,137 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pricing Page</title>
-    <link rel="stylesheet" href="./styles/index.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body>
     <nav class="navbar">
-        <div class="logo">
-            <h3>Amazon</h3>
-            <img class="logo-img" src="./assets/logo.jpg" alt="">
-        </div>
+      <div class="logo">
+        <h3>Amazon</h3>
+        <img class="logo-img" src="./assets/logo.jpg" alt="" />
+      </div>
 
-        <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Contact</a></li>
-            
-        </ul>
-    </nav> 
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
     <!-- card -->
-     <header class="page-header">
-        <h1>Choose Your Plan</h1>
-        <p>Simple pricing with no hidden fees.</p>
+    <header class="page-header">
+      <h1>Choose Your Plan</h1>
+      <p>Simple pricing with no hidden fees.</p>
     </header>
 
     <main>
-        <section class="pricing-container">
+      <section class="pricing-container">
+        <!-- Basic Plan -->
+        <article class="pricing-card">
+          <h2>Basic</h2>
+          <p class="price">$9<span>/month</span></p>
 
-            <!-- Basic Plan -->
-            <article class="pricing-card">
-                <h2>Basic</h2>
-                <p class="price">$9<span>/month</span></p>
+          <ul class="features">
+            <li>✔ 1 Website</li>
+            <li>✔ 10 GB Storage</li>
+            <li>✔ Basic Support</li>
+            <li>✔ Free SSL</li>
+          </ul>
 
-                <ul class="features">
-                    <li>✔ 1 Website</li>
-                    <li>✔ 10 GB Storage</li>
-                    <li>✔ Basic Support</li>
-                    <li>✔ Free SSL</li>
-                </ul>
+          <button>Select Plan</button>
+        </article>
 
-                <button>Select Plan</button>
-            </article>
+        <!-- Standard Plan -->
+        <article class="pricing-card featured">
+          <p class="badge">Most Popular</p>
 
-            <!-- Standard Plan -->
-            <article class="pricing-card featured">
-                <p class="badge">Most Popular</p>
+          <h2>Standard</h2>
+          <p class="price">$29<span>/month</span></p>
 
-                <h2>Standard</h2>
-                <p class="price">$29<span>/month</span></p>
+          <ul class="features">
+            <li>✔ 10 Websites</li>
+            <li>✔ 100 GB Storage</li>
+            <li>✔ Priority Support</li>
+            <li>✔ Free Domain</li>
+          </ul>
 
-                <ul class="features">
-                    <li>✔ 10 Websites</li>
-                    <li>✔ 100 GB Storage</li>
-                    <li>✔ Priority Support</li>
-                    <li>✔ Free Domain</li>
-                </ul>
+          <button>Select Plan</button>
+        </article>
 
-                <button>Select Plan</button>
-            </article>
+        <!-- Premium Plan -->
+        <article class="pricing-card">
+          <h2>Premium</h2>
+          <p class="price">$99<span>/month</span></p>
 
-            <!-- Premium Plan -->
-            <article class="pricing-card">
-                <h2>Premium</h2>
-                <p class="price">$99<span>/month</span></p>
+          <ul class="features">
+            <li>✔ Unlimited Websites</li>
+            <li>✔ Unlimited Storage</li>
+            <li>✔ 24/7 Support</li>
+            <li>✔ Free Domain & SSL</li>
+          </ul>
 
-                <ul class="features">
-                    <li>✔ Unlimited Websites</li>
-                    <li>✔ Unlimited Storage</li>
-                    <li>✔ 24/7 Support</li>
-                    <li>✔ Free Domain & SSL</li>
-                </ul>
-
-                <button>Select Plan</button>
-            </article>
-
-        </section>
+          <button>Select Plan</button>
+        </article>
+      </section>
     </main>
-
-   
-</body>
+    <!-- Feature comparison table  -->
+    <section class="comparison-section">
+      <h2>Feature Comparison</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Features</th>
+            <th>Basic</th>
+            <th>Standard</th>
+            <th>Premium</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Websites</td>
+            <td>1</td>
+            <td>10</td>
+            <td>Unlimited</td>
+          </tr>
+          <tr>
+            <td>Storage</td>
+            <td>10 GB</td>
+            <td>100 GB</td>
+            <td>Unlimited</td>
+          </tr>
+          <tr>
+            <td>Free Domain</td>
+            <td>❌</td>
+            <td>✔</td>
+            <td>✔</td>
+          </tr>
+          <tr>
+            <td>SSL Certificate</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+          </tr>
+          <tr>
+            <td>Email Support</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+          </tr>
+          <tr>
+            <td>Priority Support</td>
+                <td>❌</td>
+                <td>✔</td>
+                <td>✔</td>
+          </tr>
+          <tr>
+                <td>24/7 Support</td>
+                <td>❌</td>
+                <td>❌</td>
+                <td>✔</td>
+            </tr>
+        </tbody>
+      </table>
+    </section>
+  </body>
 </html>
